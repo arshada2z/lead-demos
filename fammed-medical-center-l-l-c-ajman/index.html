@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>FamMed Medical Center L.L.C — Mobile App Concept</title>
+<meta name="description" content="Mobile app concept for FamMed Medical Center L.L.C. Demo only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f8f7;--surface:#ffffff;--ink:#12302e;--muted:#557370;--accent:#1f8a7a;--accent-ink:#ffffff;--dark:#12302e;
+--display:'DM Serif Display',Georgia,serif;--body:'DM Sans',system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}
+.demo-bar{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:center;align-items:center;padding:9px 16px;background:#111;color:#fff;font:500 13px/1.3 system-ui,sans-serif;text-align:center}
+.demo-bar span{opacity:.7}.demo-bar strong{color:#ffd166;font-weight:700}
+</style>
+<style>
+body{background:radial-gradient(1200px 600px at 50% -10%,color-mix(in srgb,var(--accent) 22%,var(--bg)),var(--bg))}
+.intro{text-align:center;padding:56px 20px 10px;max-width:760px;margin:0 auto}
+.intro .chip{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px;background:var(--surface);box-shadow:0 6px 20px -10px rgba(0,0,0,.25);font-weight:600;font-size:14px}
+.intro h1{font:700 clamp(34px,5vw,58px)/1.05 var(--display);margin:20px 0 12px}
+.intro p{color:var(--muted);font-size:18px;margin:0}
+.intro .site{display:inline-flex;gap:6px;align-items:center;margin-top:12px;font-size:14px;color:var(--muted)}
+.stage{display:flex;gap:40px;justify-content:center;padding:44px 20px 30px;overflow-x:auto;scroll-snap-type:x mandatory}
+.phone{flex:none;width:300px;height:630px;border-radius:48px;background:#0d0d0f;padding:11px;box-shadow:0 50px 80px -30px rgba(0,0,0,.45),inset 0 0 0 2px #2a2a2e;scroll-snap-align:center;position:relative}
+.phone:nth-child(2){transform:translateY(-22px)}
+.screen{width:100%;height:100%;border-radius:38px;overflow:hidden;background:var(--bg);position:relative;display:flex;flex-direction:column;font-size:13px}
+.screen::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:96px;height:27px;background:#0d0d0f;border-radius:20px;z-index:5}
+.status{display:flex;justify-content:space-between;padding:14px 24px 6px;font-size:12px;letter-spacing:.02em}.status span{font-size:9px;letter-spacing:1px}
+.body{flex:1;overflow:hidden;padding:8px 16px 0}
+.row{display:flex;align-items:center;gap:10px}
+.hello small{color:var(--muted);display:block;font-size:11.5px}.hello b{font:700 17px/1.15 var(--display)}
+.heroc{margin-top:14px;height:170px;border-radius:22px;background-size:cover;background-position:center;color:#fff;padding:14px;display:flex;flex-direction:column;justify-content:flex-end}
+.heroc .r{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.2);backdrop-filter:blur(8px);border-radius:99px;padding:3px 9px;font-size:11.5px;width:max-content}
+.heroc .r svg{fill:#ffd166;stroke:#ffd166}
+.heroc b{font:700 18px/1.15 var(--display);margin-top:6px}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.quick span{background:var(--surface);border-radius:16px;padding:11px 4px;text-align:center;font-size:11.5px;font-weight:600;box-shadow:0 4px 14px -8px rgba(0,0,0,.2)}
+.quick i{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 6px;border-radius:11px;background:color-mix(in srgb,var(--accent) 20%,transparent);color:var(--ink)}
+.h{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 8px}.h b{font:700 15px var(--display)}.h small{color:var(--accent);font-weight:600}
+.svc{display:flex;gap:10px;align-items:center;background:var(--surface);border-radius:14px;padding:10px;margin-bottom:8px}
+.svc i{width:36px;height:36px;border-radius:10px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 13px var(--display);flex:none}
+.svc b{display:block;font-size:12.5px}.svc small{color:var(--muted);font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:170px}
+.tabs{display:flex;justify-content:space-around;padding:10px 10px 22px;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.tabs span{display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px}.tabs em{font-style:normal}.tabs .on{color:var(--ink)}.tabs .on svg{color:var(--accent)}
+.title{font:700 22px/1.1 var(--display);margin:6px 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}.chips span{padding:7px 11px;border-radius:99px;background:var(--surface);font-size:11.5px;font-weight:500}.chips .on{background:var(--ink);color:var(--bg)}
+.days{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:16px}
+.days span{background:var(--surface);border-radius:14px;padding:8px 0;text-align:center;font-size:10.5px;color:var(--muted)}.days b{display:block;font-size:16px;color:var(--ink)}
+.days .on{background:var(--accent);color:var(--accent-ink)}.days .on b{color:var(--accent-ink)}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:16px}.slots span{border:1.5px solid color-mix(in srgb,var(--ink) 14%,transparent);border-radius:12px;padding:8px 0;text-align:center;font-weight:600;font-size:12px}
+.slots .on{border-color:var(--ink);background:var(--ink);color:var(--bg)}.slots .off{opacity:.35;text-decoration:line-through}
+.sum{background:var(--surface);border-radius:16px;padding:12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.sum small{color:var(--muted);display:block;font-size:11px}
+.big{display:flex;justify-content:center;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);border-radius:16px;padding:14px;font-weight:700;font-size:14px}
+.loyal{border-radius:22px;padding:16px;color:#fff;background:linear-gradient(135deg,var(--dark),color-mix(in srgb,var(--accent) 70%,var(--dark)));margin:6px 0 14px}
+.loyal small{opacity:.75;font-size:11px}.loyal b{display:block;font:700 18px var(--display);margin:2px 0 12px}
+.stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.stamps span{aspect-ratio:1;border-radius:50%;border:1.5px dashed rgba(255,255,255,.5);display:grid;place-items:center}.stamps .on{background:#fff;color:var(--dark);border:0}
+.mini{height:110px;border-radius:18px;margin-bottom:10px;background:
+linear-gradient(90deg,transparent 47%,rgba(255,255,255,.9) 47% 53%,transparent 53%),linear-gradient(0deg,transparent 60%,rgba(255,255,255,.9) 60% 64%,transparent 64%),linear-gradient(20deg,transparent 30%,rgba(255,255,255,.7) 30% 33%,transparent 33%),color-mix(in srgb,var(--accent) 25%,#e9eee8);position:relative}
+.mini::after{content:"";position:absolute;left:50%;top:44%;width:22px;height:22px;border-radius:50% 50% 50% 0;transform:translate(-50%,-50%) rotate(-45deg);background:var(--accent);box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.line{display:flex;gap:10px;align-items:center;padding:10px;background:var(--surface);border-radius:14px;margin-bottom:7px;font-size:12px}.line i{color:var(--accent);flex:none}
+.line small{display:block;color:var(--muted);font-size:10.5px}
+.feat{max-width:1000px;margin:10px auto 0;padding:20px 20px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feat div{background:var(--surface);border-radius:20px;padding:20px}.feat i{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);color:var(--accent-ink);margin-bottom:12px}
+.feat b{display:block;font:700 17px var(--display);margin-bottom:4px}.feat p{margin:0;color:var(--muted);font-size:14px}
+.stores{display:flex;gap:10px;justify-content:center;margin-top:18px}.stores span{background:#111;color:#fff;border-radius:12px;padding:8px 16px;font-size:12px;text-align:left;line-height:1.2}.stores b{display:block;font-size:15px}
+@media (max-width:1000px){.stage{justify-content:flex-start}.phone:nth-child(2){transform:none}.feat{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.feat{grid-template-columns:1fr}.intro{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><span>Demo concept · not affiliated with FamMed Medical Center L.L.C</span><strong>This mobile app design is available for $1,500</strong></div>
+<div class="intro">
+  <span class="chip"><img src="photo.jpg" alt="FamMed Medical Center L.L.C logo" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)"> FamMed Medical Center L.L.C</span>
+  <h1>Your business, in your customers' pocket</h1>
+  <p>A mobile app concept for FamMed Medical Center L.L.C — bookings, rewards and one-tap calling for iOS and Android.</p>
+  <div class="site"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg> Works alongside fammedmc.com</div>
+  <div class="stores"><span><small>Download on the</small><b>App Store</b></span><span><small>Get it on</small><b>Google Play</b></span></div>
+</div>
+
+<div class="stage">
+  <div class="phone"><div class="screen"><div class="status"><b>9:41</b><span>●●● ◐</span></div>
+    <div class="body">
+      <div class="row hello"><img src="photo.jpg" alt="FamMed Medical Center L.L.C logo" style="width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--accent)"><div><small>Welcome to</small><b>FamMed Medical Center L.L…</b></div><span style="margin-left:auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span></div>
+      <div class="heroc" style="background-image:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.65)),url('photo.jpg')">
+        <span class="r"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg> 4.7 · Google</span>
+        <b>Gentle care for healthy, confident smiles.</b>
+      </div>
+      <div class="quick"><span><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i>Call</span><span><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></i>Directions</span><span><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></i>Book</span></div>
+      <div class="h"><b>Popular services</b><small>See all</small></div>
+      <div class="svc"><i>C</i><div><b>Check-ups &amp; Cleaning</b><small>Preventive care for the whole family.</small></div></div><div class="svc"><i>T</i><div><b>Teeth Whitening</b><small>A brighter smile, safely.</small></div></div><div class="svc"><i>I</i><div><b>Implants</b><small>Permanent, natural-looking replacements.</small></div></div>
+    </div><nav class="tabs"><span class="on"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><em>Home</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><em>Book</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg><em>Rewards</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/></svg><em>Profile</em></span></nav>
+  </div></div>
+
+  <div class="phone"><div class="screen"><div class="status"><b>9:41</b><span>●●● ◐</span></div>
+    <div class="body">
+      <div class="title">Book a visit</div>
+      <div class="chips"><span class="on">Check-ups </span><span class="">Teeth Whitening</span><span class="">Implants</span><span class="">Invisalign</span></div>
+      <div class="h"><b>Choose a day</b><small>November</small></div>
+      <div class="days"><span class="">Mon<b>9</b></span><span class="on">Tue<b>10</b></span><span class="">Wed<b>11</b></span><span class="">Thu<b>12</b></span><span class="">Fri<b>13</b></span><span class="">Sat<b>14</b></span></div>
+      <div class="h"><b>Available times</b></div>
+      <div class="slots"><span class="">9:00</span><span class="off">10:30</span><span class="">11:00</span><span class="on">1:30</span><span class="">3:00</span><span class="">4:30</span></div>
+      <div class="sum"><div><small>Check-ups &amp; Cleaning</small><b>Tue 10 · 1:30 PM</b></div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div class="big">Confirm booking <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div><nav class="tabs"><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><em>Home</em></span><span class="on"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><em>Book</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg><em>Rewards</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/></svg><em>Profile</em></span></nav>
+  </div></div>
+
+  <div class="phone"><div class="screen"><div class="status"><b>9:41</b><span>●●● ◐</span></div>
+    <div class="body">
+      <div class="title">Rewards</div>
+      <div class="loyal"><small>FamMed Medical Center L.L.C Club</small><b>3 of 5 visits</b>
+        <div class="stamps"><span class="on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class=""></span><span class=""><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span></div>
+      </div>
+      <div class="mini"></div>
+      <div class="line"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></i><div><small>Address</small>Al Itihad Rd., NESTO Hypermarket</div></div>
+      <div class="line"><i><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i><div><small>Phone</small>+971 52 249 9880</div></div>
+      <div class="big" style="margin-top:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Get directions</div>
+    </div><nav class="tabs"><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><em>Home</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><em>Book</em></span><span class="on"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg><em>Rewards</em></span><span class=""><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a7 7 0 0 1 14 0v1"/></svg><em>Profile</em></span></nav>
+  </div></div>
+</div>
+
+<div class="feat">
+  <div><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></i><b>Online booking</b><p>Customers book 24/7 — fewer missed calls, fuller calendar.</p></div>
+  <div><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></i><b>Push offers</b><p>Send deals and reminders straight to their phones.</p></div>
+  <div><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></i><b>Loyalty rewards</b><p>Digital stamp cards that keep customers coming back.</p></div>
+  <div><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></i><b>One-tap contact</b><p>Call, get directions or message in a single tap.</p></div>
+</div>
+</body>
+</html>
